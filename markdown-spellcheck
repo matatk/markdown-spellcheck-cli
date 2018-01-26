@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+'use strict'
+require('core-text-spellcheck-cli')({
+	spellCheckerInit: (options) => require('markdown-it')({ html: true })
+		.use(require('markdown-it-spellcheck'), options),
+	spellCheckerCall: (spellChecker, content) => spellChecker.render(content)
+})()

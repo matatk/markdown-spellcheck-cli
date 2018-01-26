@@ -1,0 +1,41 @@
+{
+  "name": "markdown-spellcheck-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Markdown file spell-checker",
+  "keywords": [
+    "markdown",
+    "spell",
+    "spell-check",
+    "spellcheck",
+    "spelling"
+  ],
+  "homepage": "https://github.com/matatk/markdown-spellcheck-cli#readme",
+  "bugs": {
+    "url": "https://github.com/matatk/markdown-spellcheck-cli/issues"
+  },
+  "license": "MIT",
+  "author": "Matthew Tylee Atkinson",
+  "bin": {
+    "markdown-spellcheck": "./markdown-spellcheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matatk/markdown-spellcheck-cli.git"
+  },
+  "scripts": {
+    "precommit": "npm test",
+    "test": "eslint markdown-spellcheck"
+  },
+  "dependencies": {
+    "core-text-spellcheck": "github:matatk/core-text-spellcheck#0.3.0",
+    "core-text-spellcheck-cli": "github:matatk/core-text-spellcheck-cli#0.2.0",
+    "html-text-extract": "github:matatk/html-text-extract#0.1.1",
+    "markdown-it": "~8.4",
+    "markdown-it-spellcheck": "github:matatk/markdown-it-spellcheck#0.3.1"
+  },
+  "devDependencies": {
+    "eslint": "~4.16",
+    "husky": "~0.14"
+  }
+}
